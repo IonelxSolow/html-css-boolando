@@ -111,7 +111,8 @@ header {
 }
 }
 .favorite{
-  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: var(--boo-font-icon-navbar);
   right: 0;
   top: 1rem;
@@ -166,10 +167,14 @@ footer {
   vertical-align: center;
   height: 114px;
   background-color: var(--boo-dark-not-black);
+  .social_icons{
+    color: var(--boo-font-icon-navbar);
+    font-size: 1.5rem;
+   
+  }
   .nome_impresa,
   .site_info_social {
     justify-content: space-between;
-    padding: 0;
     h3,
     h4 {
       color: var(--boo-font-icon-navbar);
