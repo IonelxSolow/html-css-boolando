@@ -1,33 +1,30 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --boo-navbar-bg: #ff6900;
-    --boo-font-icon-navbar:#ffffff;
-    --boo-discount: #ff0000;
-    --boo-sostenibility: #008000;
-    --boo-dark-not-black: #1a1a1a;
+:root {
+  --boo-navbar-bg: #ff6900;
+  --boo-font-icon-navbar: #ffffff;
+  --boo-discount: #ff0000;
+  --boo-sostenibility: #008000;
+  --boo-dark-not-black: #1a1a1a;
 }
 
-.debug{
-    *{
-        border: 1px dashed;
-    }
+.debug {
+  * {
+    border: 1px dashed;
+  }
 }
 
-
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-main{
-    padding-top: 8rem;
-    padding-bottom: 5rem;
+main {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 /* COMMON */
 
@@ -35,85 +32,114 @@ main{
 
 /* HEADER */
 header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    left: 0;
-    top: 0;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  top: 0;
 
+  background-color: var(--boo-navbar-bg);
+  padding: 1rem 0.5rem;
 
-    background-color: var(--boo-navbar-bg);
-    padding: 1rem 0.5rem;
-    
-    
-    .logo,
-    .login {
-      flex-grow: 1;
-    }
-    .logo_boolean {
-      display: flex;
-      justify-content: center;
-      vertical-align: center;
-      flex-grow: 2;
-      height: 2rem;
-    }
-    .action_icon {
-      text-align: end;
-    }
-    .navbar {
-      /* padding: 0.25rem;
+  .logo,
+  .login {
+    flex-grow: 1;
+  }
+  .logo_boolean {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    flex-grow: 2;
+    height: 2rem;
+  }
+  .action_icon {
+    text-align: end;
+  }
+  .navbar {
+    /* padding: 0.25rem;
       font-size: 10px;
       text-align: center; */
-      flex-grow: 1;
-    }
+    flex-grow: 1;
   }
-  .navbar, .logo_boolean, .action_icon, .site_information {
-    cursor: pointer;
-    a {
-        color: var(--boo-font-icon-navbar);
-        text-decoration: none;
-        padding: 0 0.25rem;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
 }
-  .container {
-    max-width: 2000px;
-    min-width: 1438px;
-    width: 70%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+.navbar,
+.logo_boolean,
+.action_icon,
+.site_information {
+  cursor: pointer;
+  a {
+    color: var(--boo-font-icon-navbar);
+    text-decoration: none;
+    padding: 0 0.25rem;
   }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.container {
+  max-width: 2000px;
+  min-width: 1438px;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
 /* /HEADER */
-.item_box{
-    height: 670px;
-    width: 465px;
-}
+
 /* ITEM SECTION */
 
+.p-absol{
+  position: absolute;
 
+}
+.discount-sostenibility-box{
+  bottom: 40px;
+  left: 0;
+  .discount, .sostenibility{
+    padding: 0.5rem 0.75rem;
+    color: var(--boo-font-icon-navbar);
+    
+  }
+
+.discount{
+  background-color: var(--boo-discount);
+}
+.sostenibility{
+  background: var(--boo-sostenibility);
+}
+}
+.favorite{
+  padding: 0.5rem 0.75rem;
+  background-color: var(--boo-font-icon-navbar);
+  right: 0;
+  top: 10px;
+}
+.item_box {
+  position: relative;
+  height: 670px;
+  width: 465px;
+}
 /* / ----ITEM SECTION */
 
-
 /* FOOTER */
-footer{
-    flex-direction: column;
-    vertical-align: center;
-    height: 114px;
-    background-color: var(--boo-dark-not-black);
-    .nome_impresa, .site_info_social{
-        justify-content: space-between;
-        padding: 0;
-        h3, h4{
-           color: var(--boo-font-icon-navbar); 
-        }
-        h4{
-            padding-right: 1rem;
-        }
+footer {
+  flex-direction: column;
+  vertical-align: center;
+  height: 114px;
+  background-color: var(--boo-dark-not-black);
+  .nome_impresa,
+  .site_info_social {
+    justify-content: space-between;
+    padding: 0;
+    h3,
+    h4 {
+      color: var(--boo-font-icon-navbar);
     }
+    h4 {
+      padding-right: 1rem;
+    }
+  }
 }
 /* /FOOTER */

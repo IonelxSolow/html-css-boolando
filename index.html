@@ -6,9 +6,9 @@
     <title>Boolando</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="deug">
+  <body class="debug">
     <!-- HEADER -->
-    <header id="Fixed_header" class="d-flex">
+    <header class="d-flex">
       <div class="container d-flex">
         <!-- Navbar with link -->
         <div class="navbar d-flex">
@@ -27,47 +27,51 @@
         <!-- /Logo -->
         <!-- Action Button -->
         <div class="action_icon">
-            <a href="#">Profile</a>
-            <a href="#">Love</a>
-            <a href="#">ShoppingBag</a>
+          <a href="#">Profile</a>
+          <a href="#">Love</a>
+          <a href="#">ShoppingBag</a>
         </div>
       </div>
       <!-- /Action buttons -->
     </header>
     <!-- /HEADER -->
-     <main>
-        <!-- ---ITEM SECTION -->
-      <section class="container d-flex">
-        <div class="item_box">1</div>
-        <div class="item_box">2</div>
+    <main>
+      <!-- ---ITEM SECTION -->
+      <section id="item_container_main" class="container d-flex">
+        <div class="item_box">
+          <!-- <img src="./assets/img/1.webp" alt="immagine 1A" /> -->
+          <div class="p-absol discount-sostenibility-box ">
+            <span class="discount">-50%</span>
+            <span class="sostenibility">Sostenibilità</span>
+          </div>
+          <span class="favorite p-absol">H</span>
+        </div>
+        <!-- <div class="item_box">2</div>
         <div class="item_box">3</div>
         <div class="item_box">4</div>
         <div class="item_box">5</div>
-        <div class="item_box">6</div>
+        <div class="item_box">6</div> -->
       </section>
       <!-- ---ITEM SECTION -->
     </main>
-       <!-- FOOTER -->
-       <footer class="d-flex">
-        <div class="container d-flex nome_impresa">
-           
-             <h3>Boolando s.r.l</h3>
-             <h4>Trovaci anche su</h4>
-            
-          </div>
+    <!-- FOOTER -->
+    <footer class="d-flex">
+      <div class="container d-flex nome_impresa">
+        <h3>Boolando s.r.l</h3>
+        <h4>Trovaci anche su</h4>
+      </div>
 
-          <div class="container d-flex site_info_social">
-            <div class="site_information d-flex">
-                <a href="#">Informazioni legali</a>
-                <a href="#">Informativa sulla privacy</a>
-                <a href="#"> Diritto di recesso</a>
-              </div>
-              <div>
-                <h3>ICONE SOCIAL da inserire</h3>
-              </div>
-          </div>
-       </footer>
-       <!-- /FOOTER -->
-     
+      <div class="container d-flex site_info_social">
+        <div class="site_information d-flex">
+          <a href="#">Informazioni legali</a>
+          <a href="#">Informativa sulla privacy</a>
+          <a href="#"> Diritto di recesso</a>
+        </div>
+        <div>
+          <h3>ICONE SOCIAL da inserire</h3>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
   </body>
 </html>
