@@ -7,8 +7,11 @@
 }
 
 :root{
-    --boo-navbar-bg: orange;
-    --boo-font-icon-navbar: white;
+    --boo-navbar-bg: #ff6900;
+    --boo-font-icon-navbar:#ffffff;
+    --boo-discount: #ff0000;
+    --boo-sostenibility: #008000;
+    --boo-dark-not-black: #1a1a1a;
 }
 
 .debug{
@@ -17,33 +20,30 @@
     }
 }
 
+
 .d-flex{
     display: flex;
 }
 
+main{
+    padding-top: 75px;
+}
 /* COMMON */
 
 /* /COMMON */
 
 /* HEADER */
 header {
+    position: fixed;
+    z-index: 100;
+
     background-color: var(--boo-navbar-bg);
     padding: 0.5rem;
-    height: 50px;
+    height: 75px;
+    
     .logo,
     .login {
       flex-grow: 1;
-    }
-    .navbar, .logo_boolean, .action_icon{
-        cursor: pointer;
-        a {
-            color: var(--boo-font-icon-navbar);
-            text-decoration: none;
-            padding: 0 0.25rem;
-          }
-          a:hover {
-            text-decoration: underline;
-          }
     }
     .logo_boolean {
       display: flex;
@@ -62,13 +62,53 @@ header {
       flex-grow: 1;
     }
   }
+  .navbar, .logo_boolean, .action_icon, .site_information {
+    cursor: pointer;
+    a {
+        color: var(--boo-font-icon-navbar);
+        text-decoration: none;
+        padding: 0 0.25rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+}
   .container {
+    max-width: 2000px;
+    min-width: 1438px;
     width: 70%;
     margin: auto;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
   }
-
-
-  
 /* /HEADER */
+.item_box{
+    height: 670px;
+    width: 465px;
+}
+/* ITEM SECTION */
+
+
+/* / ----ITEM SECTION */
+
+
+/* FOOTER */
+footer{
+    flex-direction: column;
+    vertical-align: center;
+    height: 114px;
+    background-color: var(--boo-dark-not-black);
+    .nome_impresa, .site_info_social{
+        justify-content: space-between;
+        padding: 0;
+        h3, h4{
+           color: var(--boo-font-icon-navbar); 
+        }
+        h4{
+            padding-right: 1rem;
+        }
+    }
+}
+/* /FOOTER */
